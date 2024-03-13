@@ -1,0 +1,167 @@
+html {
+height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+button {
+  border: none;
+}
+
+p, li, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  pointer-events: auto;
+  padding: 50px;
+/* max-width: 1250px; */
+height: 100vh;
+}
+
+.start_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.start_block {
+  pointer-events: all;
+  width: 175px;
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center;  */
+  /* height: 100%; */
+  
+}
+
+.button_add {
+  border: 1px solid rgb(35, 35, 35);
+  border-radius: 3px;
+  background-color: rgba(128, 128, 128, 0.25);
+  color: rgb(35, 35, 35);
+ 
+  pointer-events: all;
+  letter-spacing: 0px;
+  text-align: center;
+  width: 120px;
+  height: 32px;
+  padding: 0px 10px;
+  display: inline-block;
+}
+
+.users_block--hidden{
+  display: none;
+}
+
+.user_list {
+  margin-top: 10px;
+  /* border: 1px solid rgb(35, 35, 35); */
+}
+
+.user_item {
+  display: flex;
+  align-items: center;
+  width: 265px;
+  height: 30px;
+  padding-left: 5px;
+
+  border: 1px solid rgb(35, 35, 35);
+}
+
+.user_item--is-active {
+  background-image: url('./icons/current_user.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: rgba(128, 128, 128, 0.25);
+}
+
+.choose_box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 8px;
+  height: 277px;
+  width: 411px;
+  box-sizing: border-box;
+  border: 1px dotted rgb(35, 35, 35);
+ 
+}
+
+.choose_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+}
+.drop_file {
+  display: flex;
+  text-align: center;
+}
+
+.button_choose {
+  border: 1px solid rgb(35, 35, 35);
+  background-color: rgba(128, 128, 128, 0.25);
+  border-radius: 3px;
+
+  pointer-events: all;
+  letter-spacing: 0px;
+  text-align: center;
+  height: 27px;
+  height: 32px;
+  padding: 0px 25px;
+
+  display: inline-block;
+
+}
+
+.test_class {
+  display: flex;
+  justify-content: normal;
+}
+
+.settings_block {
+  margin-top: 15px;
+  display: flex;
+  margin-left: 20px;
+  flex-direction: column;
+  gap: 5px;
+
+}
+.setting {
+  display: flex;
+  color: rgb(0, 0, 0);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    white-space: nowrap; /* Запобігає переносу тексту */
+}
+
+.setting_text {
+  white-space: nowrap; /* Запобігає переносу тексту */
+  overflow: hidden; /* Ховає текст, який вилазить за межі блоку */
+  text-overflow: ellipsis;
+  color: rgb(35, 35, 35);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0px;
+    
+}
